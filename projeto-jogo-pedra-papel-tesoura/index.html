@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Pedra, Papel e Tesoura</h1>
+        
+        <div class="players-container">
+            <div class="player">
+                <h2>Player 1</h2>
+                <div class="choices">
+                    <button data-choice="rock" class="choice">✊</button>
+                    <button data-choice="paper" class="choice">✋</button>
+                    <button data-choice="scissors" class="choice">✌️</button>
+                </div>
+            </div>
+            
+            <div class="player">
+                <h2>Player 2</h2>
+                <div class="choices">
+                    <button data-choice="rock" class="choice">✊</button>
+                    <button data-choice="paper" class="choice">✋</button>
+                    <button data-choice="scissors" class="choice">✌️</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-container" class="result-container hidden">
+            <h3 id="result-text"></h3>
+            <div id="choices-display" class="choices-display"></div>
+            <button id="reset-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

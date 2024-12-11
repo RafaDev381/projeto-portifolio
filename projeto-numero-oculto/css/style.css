@@ -1,0 +1,57 @@
+body{
+    all: unset; /*Tirar todas as predefinições da página*/
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*Para deixar o texto mais flexível nas mudanças*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Mudar a altura de onde o texto vai ficar*/
+    background-color: #74b6f8;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;/*Para deixar um elemento embaixo do outro*/
+    align-items: center;
+    justify-content: center;
+    gap: 16px; /*Espaçamento entre os elementos*/
+    background-color: rgba(0,0,0,.6);
+    border-radius: 16px;
+    padding: 48px 64px;
+    color: #ffffff;
+}
+
+.conteudo input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 64px;
+    border-bottom: 1px solid #ffffff;
+    width: 50%;
+}
+
+.conteudo input::placeholder{
+    color: #ffffff;
+}
+
+.conteudo input:focus{
+    border-bottom: #74b6f8;
+}
+
+.conteudo button{
+    padding: 128px;
+    width: 80%;
+    font-size: 16px;
+    background-color: #368FE9;
+    border: none;
+    border-radius: 16px;
+    color: #ffffff;
+    margin-top: 32px;
+    cursor: pointer; /*Para facilitar o entedimento em algo clicavel*/
+    transition: .4s;
+}
+
+.conteudo button:hover{
+    background-color: #74b6f8;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <div class="cointainer-jogo">
+        <div class="tabuleiro-jogo">
+            <div class="carta" data-index="0"></div> <!--data-'index' vai ser uma variável dentro do html-->
+            <div class="carta" data-index="1"></div>
+            <div class="carta" data-index="2"></div>
+            <div class="carta" data-index="3"></div>
+            <div class="carta" data-index="4"></div>
+            <div class="carta" data-index="5"></div>
+        </div><!--tabuleiro-jogo-->
+
+        <div class="informacoes">
+            <p id="mensagem">Encontre todos os pares!</p>
+            <p>Tentativa <span id="tentativas">0</span></p>
+            <button id="botaoReiniciar">Reiniciar Jogo</button>
+        </div><!--informacoes-->
+    </div><!--container-jogo-->
+</body>
+</html>

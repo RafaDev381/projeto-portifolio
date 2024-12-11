@@ -1,0 +1,472 @@
+/*Estilo da página em geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+}
+
+.titulo span {
+    color: #00FF08;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+/*Estilo do cabeçalho*/
+header {
+    padding: 40px 4%;
+
+    .interface {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        color: #5c5c5c;
+        text-decoration: none;
+        display: inline-block;
+        transition: .2s;
+    }
+
+    nav.menu-desktop a:hover {
+        color: #ffffff;
+        transform: scale(1.05);
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav.menu-desktop ul li {
+        display: inline-block;
+        padding: 0 40px;
+    }
+
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+/*Estilo do menu mobile*/
+.btn-abrir-menu i {
+    color: #00FF08;
+    font-size: 40px;
+    display: block;
+}
+
+.menu-mobile {
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999; /*Determina qual elemento vai ficar por cima dos outros*/
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+
+    .abrir-menu {
+        width: 70%;
+
+        ~ .overlay-menu {
+            display: block;
+        }
+    }
+
+    .btn-fechar {
+        padding: 20px 4%;
+
+        i {
+            color: #00FF08;
+            font-size: 30px;
+        }
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 4%;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background-color: #00FF08;
+        color: black;
+    }
+}
+
+.overlay-menu {
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*Estilo do topo do site */
+.topo-do-site{
+    padding: 40px 4%;
+
+    .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 42px;
+    }
+
+    .txt-topo-site span {
+        color: #00FF08;
+    }
+
+    .txt-topo-site p {
+        color: #ffffff;
+        margin: 40px 0;
+    }
+
+    .img-topo-site img {
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        animation: flutuar 2s ease-in-out infinite alternate;
+    }
+}
+
+/*Animações*/
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/*Estilo das especialidades*/
+.especialidades {
+    padding: 40px 4%;
+
+    .flex {
+        gap: 60px;
+    }
+}
+
+.especialidades .especialidades-box {
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+
+    i {
+        font-size: 70px;
+        color: #00FF08;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin: 15px 0;
+    }
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+/*Estilo do sobre*/
+.sobre {
+    padding: 80px 4%;
+
+    .flex {
+        align-items: center;
+        gap: 60px;
+    }
+
+    .txt-sobre {
+        color: #ffffff;
+    }
+
+    .txt-sobre h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .txt-sobre h2 span {
+        color: #00FF08;
+        display: block;
+    }
+
+    .txt-sobre p {
+        margin: 20px 0;
+        text-align: justify;
+    }
+
+    .img-sobre img {
+        border-radius: 10px;
+    }
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/*Estilo do portifólio*/
+.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d; /*Deslocamento, vertical, horizontal, defoque e a cor*/
+
+    .flex {
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+        background-color: #00FF08;
+    background-size: cover;
+    background-position: 45% 0;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*Estilo do formulário de contato*/
+.formulario {
+    padding: 80px 4%;
+
+    form {
+        max-width: 500px;
+        margin: 0 auto; /*Centralizar o formulário*/
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /*transforma em coluna o display flex*/
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    form input, textarea {
+        width: 100%;
+        background-color: #242424;
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 15px;
+        color: white;
+        font-size: 18px;
+    }
+
+    form textarea {
+        resize: none;
+    }
+
+    form .btn-enviar {
+        margin-top: 20px;
+    }
+
+    form .btn-enviar input {
+        width: 120px;
+        background-color: #00FF08;
+        color: black;
+        font-weight: 700;
+        cursor: pointer;
+        transition: .2s;
+    }
+}
+
+/*Estilo do rodapé*/
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    .line-footer {
+        padding: 20px 0;
+
+        p i {
+            color: #00FF08;
+            font-size: 22px;
+        }
+
+        p a {
+            color: white;
+        }
+    }
+
+    .borda {
+        border-top: 2px solid #00FF08;
+    }
+}
+
+/*Para telas menores*/
+@media screen and (max-width: 1020px) {
+    /*Classes gerais*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /*Cabeçalho*/
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    /*Topo do site*/
+    section.topo-do-site {
+        padding: 20px 8%;
+
+        .flex {
+            gap: 50px;
+        }
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-do-site {
+        width: 100%;
+    }
+
+    /*Especialidades*/
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    /*Sobre*/
+    section.sobre {
+        padding: 80px 8%;
+
+        .txt-sobre h2{
+            font-size: 34px;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .btn-social {
+            text-align: center;
+        }
+    
+        .img-sobre img{
+            width: 100%;
+        }
+    }
+
+    /*Portifólio*/
+    section.portifolio {
+        padding: 80px 8%;
+
+        img-port {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        .flex {
+            gap: 60px;
+        }
+    }
+
+    /*Rodapé*/
+    footer .flex {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}

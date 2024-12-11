@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+    color: #1E761F;
+}
+
+header {
+    background-color: #1E761F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dashboard {
+    flex: 2;
+}
+
+.saldo-conta {
+    background-color: #1E761F;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.saldo-conta h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.saldo-conta p {
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+
+.publicidade img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.botoes-acoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botoes-acoes button {
+    background-color: white;
+    border: 1px solid #1E761F;
+    color: #1E761F;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.botoes-acoes button img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 40px;
+    height: auto;
+}
+
+.botoes-acoes button:hover {
+    background-color: #3a990a;
+    color: white;
+}
+
+.btn-fechar{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-fechar-form, .btn-enviar-form{
+    background: #666;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-fechar:hover, .btn-fechar-form:hover {
+    opacity: 0.8;
+}
+
+aside.resumo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside.resumo > div {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+aside.resumo .entradas {
+    background-color: #1E761F;
+    color: white;
+}
+
+aside.resumo .saidas {
+    background-color: #FF7C7C;
+    color: white;
+}
+
+.historico ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.historico ul li {
+    background-color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1E761F;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.historico ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #D9D9D9;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.historico ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#area-pix {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #1E761F;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#area-pix nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#area-pix .tab {
+    background-color: #29ce0f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#area-pix .form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.hidden {
+    display: none;
+}
+
